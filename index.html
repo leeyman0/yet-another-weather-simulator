@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="module" src="controls.mjs"></script>
+    <script type="module" src="viewport.mjs"></script>
+    <title>Yet Another Weather Simulation</title>
+    <style>
+      div {
+	  font-family: helvetica;
+	  color: white;
+	  background-color: black;
+	  padding: 25px;
+	  margin: 5px;
+      }
+      #title {
+	  background-color: green;
+	  font-size: xx-large;
+	  width: 45%
+      }
+      body {
+	  display: flex;
+	  flex-flow: row wrap;
+	  width: 100%
+      }
+      #world-controls {
+	  background-color: darkblue;
+	  width: 45%;
+      }
+      #window {
+	  min-width: 640px;
+	  min-height: 480px;
+      }
+      #view-controls {
+	  max-width: 50%;
+	  background-color: darkred;
+      }
+      #controls {
+	  width: 100%;
+	  background-color: purple;
+      }
+      #generation-controls {
+	  background-color: darkorange;
+      }
+    </style>
+  </head> 
+  <body>
+    <div id="title">Weather Simulator</div>
+    <div id="world-controls"></div>
+    <!-- Break goes here --> 
+    <div id="view-controls"></div>
+    <div id="window">
+      <canvas id="viewport" width="640" height="480"></canvas>
+    </div>
+    <div id="generation-controls"></div> 
+  </body>
+  <script id="main" type="module" src="main.js"></script>
+</html>
